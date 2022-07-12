@@ -26,6 +26,7 @@ func NewWorkSpace(volume, imageName, containerName string) {
 }
 
 //Decompression tar image
+// 解压 tar 的image
 func CreateReadOnlyLayer(imageName string) error {
 	unTarFolderUrl := RootUrl + "/" + imageName + "/"
 	imageUrl := RootUrl + "/" + imageName + ".tar"
@@ -120,6 +121,7 @@ func DeleteMountPoint(containerName string) error {
 	return nil
 }
 
+// 删除卷
 func DeleteVolume(volumeURLs []string, containerName string) error {
 	mntURL := fmt.Sprintf(MntUrl, containerName)
 	containerUrl := mntURL + "/" +  volumeURLs[1]
@@ -137,6 +139,7 @@ func DeleteWriteLayer(containerName string) {
 	}
 }
 
+// 路径是否存在
 func PathExists(path string) (bool, error) {
 	_, err := os.Stat(path)
 	if err == nil {

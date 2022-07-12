@@ -16,7 +16,7 @@ var (
 	ConfigName          string = "config.json"
 	ContainerLogFile    string = "container.log"
 	RootUrl				string = "/root"
-	MntUrl				string = "/root/mnt/%s"
+	MntUrl				string = "/root/mnt/%s" //
 	WriteLayerUrl 		string = "/root/writeLayer/%s"
 )
 

@@ -41,6 +41,7 @@ type Network struct {
 	Driver string
 }
 
+// 网络驱动
 type NetworkDriver interface {
 	Name() string
 	Create(subnet string, name string) (*Network, error)
@@ -50,7 +51,7 @@ type NetworkDriver interface {
 }
 
 func (nw *Network) dump(dumpPath string) error {
-	if _, err := os.Stat(dumpPath); err != nil {
+	if _, err := os.Stat(dumpPath); err != nil { // os.Stat 打印文件信息
 		if os.IsNotExist(err) {
 			os.MkdirAll(dumpPath, 0644)
 		} else {
@@ -58,6 +59,7 @@ func (nw *Network) dump(dumpPath string) error {
 		}
 	}
 
+	// 创建路径
 	nwPath := path.Join(dumpPath, nw.Name)
 	nwFile, err := os.OpenFile(nwPath, os.O_TRUNC | os.O_WRONLY | os.O_CREATE, 0644)
 	if err != nil {

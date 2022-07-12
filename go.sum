@@ -1,0 +1,14 @@
+github.com/Sirupsen/logrus v0.8.8-0.20151204141443-446d1c146faa h1:SVjyjVKPxeZlWjE/I/8rXziR/U6a8xfFmGfB11PL7Z8=
+github.com/Sirupsen/logrus v0.8.8-0.20151204141443-446d1c146faa/go.mod h1:rmk17hk6i8ZSAJkSDa7nOxamrG+SP4P0mm+DAvExv4U=
+github.com/dsnet/compress v0.0.0-20160704023633-b9aab3c6a04e/go.mod h1:KjxHHirfLaw19iGT70HvVjHQsL1vq1SRQB4yOsAfy2s=
+github.com/nwaples/rardecode v0.0.0-20161222234428-18e2160743d3/go.mod h1:5DzqNKiOdpKKBH87u8VlvAnPZMXcGRhxWkRpHbbfGS0=
+github.com/urfave/cli v1.19.1 h1:0mKm4ZoB74PxYmZVua162y1dGt1qc10MyymYRBf3lb8=
+github.com/urfave/cli v1.19.1/go.mod h1:70zkFmudgCuE/ngEzBv17Jvp/497gISqfk5gWijbERA=
+github.com/vishvananda/netlink v0.0.0-20170105235913-1890b34fa39d h1:71sisrGmCsrVboC+oCHuXc4+T2ysPogrYpsPU95PseQ=
+github.com/vishvananda/netlink v0.0.0-20170105235913-1890b34fa39d/go.mod h1:+SR5DhBJrl6ZM7CoCKvpw5BKroDKQ+PJqOg65H/2ktk=
+github.com/vishvananda/netns v0.0.0-20161219181606-2c9454e4fc6e h1:egtTpNIU6W7dQ5z4EK0IN7v+Ht4ISuf7i+Ks1oz2XaY=
+github.com/vishvananda/netns v0.0.0-20161219181606-2c9454e4fc6e/go.mod h1:ZjcWmFBXmLKZu9Nxj3WKYEafiSqer2rnvPr0en9UNpI=
+github.com/xianlubird/mydocker v0.0.0-20201202115331-aa6e9aab3bd5 h1:Bium8Xa0MAusduhjAxonqT9iSS13rAe987C80AL9ll8=
+github.com/xianlubird/mydocker v0.0.0-20201202115331-aa6e9aab3bd5/go.mod h1:5pPpzB1VNmLvssjrMQ26cj0D+Yli0V+stHtp0Lnn3tg=
+golang.org/x/sys v0.0.0-20220712014510-0a85c31ab51e h1:NHvCuwuS43lGnYhten69ZWqi2QOj/CiDNcKbVqwVoew=
+golang.org/x/sys v0.0.0-20220712014510-0a85c31ab51e/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=

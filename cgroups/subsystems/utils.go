@@ -9,17 +9,23 @@ import (
 )
 
 
+// 获取 Cgroup 挂载点
 func FindCgroupMountpoint(subsystem string) string {
+	// 打开挂载文件
 	f, err := os.Open("/proc/self/mountinfo")
 	if err != nil {
 		return ""
 	}
 	defer f.Close()
 
+	// 扫描文件内容
 	scanner := bufio.NewScanner(f)
 	for scanner.Scan() {
+		//
 		txt := scanner.Text()
+		// 单词
 		fields := strings.Split(txt, " ")
+		// todo len-1 ?
 		for _, opt := range strings.Split(fields[len(fields)-1], ",") {
 			if opt == subsystem {
 				return fields[4]
@@ -33,6 +39,7 @@ func FindCgroupMountpoint(subsystem string) string {
 	return ""
 }
 
+// 获取Cgroup Path
 func GetCgroupPath(subsystem string, cgroupPath string, autoCreate bool) (string, error) {
 	cgroupRoot := FindCgroupMountpoint(subsystem)
 	if _, err := os.Stat(path.Join(cgroupRoot, cgroupPath)); err == nil || (autoCreate && os.IsNotExist(err)) {

@@ -1,9 +1,10 @@
 package subsystems
 
+// 资源配置
 type ResourceConfig struct {
-	MemoryLimit string
-	CpuShare    string
-	CpuSet      string
+	MemoryLimit string // 内存限制
+	CpuShare    string // cpu
+	CpuSet      string // cpu
 }
 
 type Subsystem interface {
@@ -14,6 +15,7 @@ type Subsystem interface {
 }
 
 var (
+	// 子系统
 	SubsystemsIns = []Subsystem{
 		&CpusetSubSystem{},
 		&MemorySubSystem{},
